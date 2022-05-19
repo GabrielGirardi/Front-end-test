@@ -1,0 +1,57 @@
+/*Gerais*/
+
+a{
+    text-decoration: none; 
+}
+
+/*Mobile*/
+@media screen and (max-width: 1024px) {
+    #profile {
+        display: flex;
+        margin: 20px auto 0;
+        width: 104px;
+        height: 104px;
+    }
+}
+
+.name-and-info {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1024px) {
+    .name {
+        font-size:20px;
+        font-weight: 700px;
+        color: #262626;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .info{
+        max-width: 217px;
+        margin-top: -5px;
+        text-align: center;
+        font-size: 14px;
+        color: #989898;
+        
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .more-info {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .arrow-down {
+        display: flex;
+        margin: 0 auto;
+        width: 12px;
+        height: 12px;
+        
+    }
+}

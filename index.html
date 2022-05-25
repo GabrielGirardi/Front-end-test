@@ -34,7 +34,7 @@
                         </li>
                         <li class="location">
                             <a href="">
-                                <img src="./image/gps.svg">
+                                <img src="./Image/gps.svg">
                                 <span id="adress"> Rio do Sul - SC</span>
                             </a>
                             </li>
@@ -54,12 +54,20 @@
                 </div>
             </div>
         </div>
+        <div class="categories-menu">
+            <div class="repositories">
+                <img src="./Image/book.svg" id="book">
+                <span class="rep">Repositories</span>
+                <div class="counter-background">
+                    <span id="counter">81</span>  
+                </div>    
+            </div>
+    </div>
+    <div class="rep-items">
+        <span class="node">Node /<span class="relase">Relase</span> -</span>
     </div>
 </head>
 <body>
-    
-</body>
-
 
 <script type="text/javascript">
 
@@ -71,12 +79,38 @@ var menu = document.querySelector(".menu");
 
 if(menu.style.display === "none") {
     menu.style.display = "block";
+    show.style.transform = "rotate(180deg)";
+    show.style.transition = "all 0.3s";
 } else {
     menu.style.display = "none";
+    show.style.transform = "rotate(360deg)";
+    show.style.transition = "all 0.3s";
 }
 
 });
     
 </script>
 
+<script type="text/javascript"> 
+    var openrep = document.querySelector(".repositories");
+    
+    openrep.addEventListener("click", function() {
+    
+    var repitem = document.querySelector(".rep-items");
+    
+    if(repitem.style.display === "none") {
+        repitem.style.display = "block";
+        openrep.style.border = "1px solid #ff0000";
+
+    } else {
+        repitem.style.display = "none";
+        openrep.style.border = "none";
+
+    }
+    
+    });
+        
+</script>
+
+</body>
 </html>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 /*Gerais*/
 
 *{
@@ -59,6 +61,7 @@
         font-size:20px;
         font-weight: 700px;
         color: #262626;
+        font-family: 'Roboto';
     }
 }
 
@@ -68,6 +71,7 @@
         margin-top: -5px;
         text-align: center;
         font-size: 14px;
+        font-family: 'Roboto';
         color: #989898;
     }
 }
@@ -75,6 +79,7 @@
 @media screen and (max-width: 1024px) {
     .more-info {
         font-size: 12px;
+        font-family: 'Roboto';
         color: #0587FF;
         font-size: 14px;
     }
@@ -129,6 +134,7 @@
     .menu-list  li span {
         color: #0587FF;
         margin-left: 10px;
+        font-family: 'Roboto';
     }
   }
 
@@ -175,6 +181,11 @@
 @media screen and (max-width: 1024px) {
     .rep {
         margin-left: 10px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
     }
 }
 
@@ -182,6 +193,7 @@
     .counter-background {
         display: flex;
         justify-content: center;
+        align-items: center;
         background: #f6f6f6;
         width: 34px;
         height: 18px;
@@ -193,24 +205,33 @@
 
 @media screen and (max-width: 1024px) {
     #counter {
-        color: #c2c2c2
+        color: #c2c2c2;
+        font-family: 'Roboto';
+        font-size: 12px;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .rep-items {
         display: none;
-        padding: 0 20px;
+        padding: 0 24px;
         margin-top: 12px;
     }
     
     .relase {
         color: blue;
         font-weight: 700;
+        font-family: 'Roboto';
     }
 
     .node {
         font-weight: 700;
         font-size: 18px;
+        font-family: 'Roboto';
+    }
+
+    .book {
+        width: 24px;
+        height: 24px;
     }
 }

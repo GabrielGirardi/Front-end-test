@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*Gerais*/
+* {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/*Mobile*/
+@media screen and (max-width: 1024px) {
+  .cotainer-profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  #profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 50px;
+    position: relative;
+    margin: 20px auto 0;
+    width: 104px;
+    height: 104px;
+    -webkit-box-shadow: 0px 0px 20px 15px #ebe9e9;
+            box-shadow: 0px 0px 20px 15px #ebe9e9;
+  }
+  .container-emoji {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    background: #fff;
+    border-radius: 50px;
+    height: 27px;
+    width: 27px;
+    bottom: 0;
+    right: 37%;
+  }
+  #emoji {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 8px;
+    right: 30%;
+  }
+  .name {
+    font-size: 20px;
+    font-weight: 700px;
+    color: #262626;
+    font-family: 'Roboto';
+  }
+  .info {
+    max-width: 217px;
+    margin-top: -5px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: #989898;
+  }
+  .more-info {
+    font-size: 12px;
+    font-family: 'Roboto';
+    color: #0587FF;
+    font-size: 14px;
+  }
+  .arrow-down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    -webkit-transition: all 0.3;
+    transition: all 0.3;
+  }
+  .btn-arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    background: #fff;
+    border: none;
+  }
+  .menu {
+    display: none;
+    background: #f8f8f8;
+    width: 380px;
+    height: 143px;
+    border-radius: 20px;
+  }
+  .menu-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu-list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -22px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 12px;
+    color: #0587FF;
+  }
+  .menu-list li span {
+    color: #0587FF;
+    margin-left: 10px;
+    font-family: 'Roboto';
+  }
+  #site {
+    padding-left: 3px;
+  }
+  #img-chain {
+    margin-left: 3px;
+  }
+  .categories-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+  .repositories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 10px;
+    /* border-bottom: 1px solid #ff0000; */
+    padding-bottom: 5px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+  .rep {
+    margin-left: 10px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .counter-background {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #f6f6f6;
+    width: 34px;
+    height: 18px;
+    margin-left: 10px;
+    border: 1px solid #c2c2c2;
+    border-radius: 36px;
+  }
+  #counter {
+    color: #c2c2c2;
+    font-family: 'Roboto';
+    font-size: 12px;
+  }
+  .rep-items {
+    display: none;
+    padding: 0 24px;
+    margin-top: 12px;
+  }
+  .group-styles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 24px;
+    background: #F8F8F8;
+    width: 380px;
+    height: 56px;
+    border-radius: 8px;
+  }
+  .group-styles .type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 8px;
+    width: 88px;
+    height: 32px;
+    background: linear-gradient(89.89deg, #0056A6 -30.01%, #0587FF 125.65%);
+    border-radius: 42px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+  }
+  .group-styles .language {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 8px;
+    width: 88px;
+    height: 32px;
+    background: linear-gradient(89.89deg, #0056A6 -30.01%, #0587FF 125.65%);
+    border-radius: 42px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+  }
+}
+
+.menu-list li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.relase {
+  color: blue;
+  font-weight: 700;
+  font-family: 'Roboto';
+}
+
+.node {
+  font-weight: 700;
+  font-size: 18px;
+  font-family: 'Roboto';
+}
+
+.book {
+  width: 24px;
+  height: 24px;
+}
+
+.name-and-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=style.css.map */

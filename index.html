@@ -5,7 +5,6 @@
         <title>Front-end Test</title>
         <link rel="stylesheet" href="./sass/style.css">
         <script src="./javascript/code.js" type="text/javascript"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -17,109 +16,71 @@
                         <img id="emoji" src="./Image/emoji.svg"> 
                     </div>
                 </div>
-            </div>    
+            </div>  
             <div class="name-and-info">
                 <h1 class="name">Nome Sobrenome</h1>
                 <p class="info">Head development team Front-End Magazord - Tagged (#BZ)</p>
-                <div id="get-more-info">
-                    <span class="more-info">
-                        Informações Adicionais
-                    </span>
-                    <img class="arrow-down" src="./Image/arrow-down.svg">
-                </div>
-                <div class="menu">
-                    <div class="menu-info">
-                        <ul class="menu-list">
-                            <li class="my-work">
-                                <a href="https://www.magazord.com.br/" target="_blank">
-                                    <img src="./Image/company.svg">
-                                    <span id="work"> Magazord - plataforma </span>
-                                </a>
-                            </li>
-                            <li class="location">
-                                <a href="" target="_blank">
-                                    <img src="./Image/gps.svg">
-                                    <span id="adress"> Rio do Sul - SC</span>
-                                </a>
-                                </li>
-                                <li class="portfolio">
-                                <a href="https://gabriel-girardi-profile.vercel.app" target="_blank"> 
-                                    <img src="./Image/chain.svg" id="img-chain">
-                                    <span id="site"> gabriel-girardi-profile.vercel.app </span>
-                                </a>
-                                </li>
-                                <li class="insta-profile">
-                                <a href="https://www.instagram.com/gabriell_girardii/" target="_blank">    
-                                    <img src="./Image/instagram.svg">
-                                    <span id="instagram"> gabriell.girardii </span>
-                                </a>
-                                </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
-            <div class="categories-menu">
-                <div class="repositories">
-                    <img src="./Image/book.svg" id="book">
-                    <span class="rep">Repositories</span>
-                    <div class="counter-background">
-                        <span id="counter">81</span>  
-                    </div>    
-                </div>
         </div>
 
+        <div id="get-more-info">
+            <span class="more-info">
+                Informações Adicionais
+            </span>
+            <img class="arrow-down" src="./Image/arrow-down.svg">
+        </div>
+        <div class="menu">
+            <div class="menu-info">
+                <ul class="menu-list">
+                    <li class="my-work">
+                        <a href="https://www.magazord.com.br/" target="_blank">
+                            <img src="./Image/company.svg">
+                            <span id="work"> Magazord - plataforma </span>
+                        </a>
+                    </li>
+                    <li class="location">
+                        <a href="" target="_blank">
+                            <img src="./Image/gps.svg">
+                            <span id="adress"> Rio do Sul - SC</span>
+                        </a>
+                    </li>
+                    <li class="portfolio">
+                        <a href="https://gabriel-girardi-profile.vercel.app" target="_blank"> 
+                            <img src="./Image/chain.svg" id="img-chain">
+                            <span id="site"> gabriel-girardi-profile.vercel.app </span>
+                        </a>
+                    </li>
+                    <li class="insta-profile">
+                        <a href="https://www.instagram.com/gabriell_girardii/" target="_blank">    
+                            <img src="./Image/instagram.svg">
+                            <span id="instagram"> gabriell.girardii </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="categories-menu">
+            <div class="repositories">
+               <img src="./Image/book.svg" id="book">
+                <span class="rep">Repositories</span>
+                <div class="counter-background">
+                    <span id="counter">81</span>  
+                </div>    
+            </div>
+        </div>
+        <div class="group-container">
+            <div class="group-options">
+                <span class="type">Type</span>
+                <span class="language">Language</span>
+            </div>
+            <img class="lupa" src="./Image/lupa.svg">
+        </div>
 
         <div class="rep-items">
-            <span class="node">Node /<span class="relase">Relase</span> -</span>
-        </div>
-        <div class="group-styles">
-            <span class="type">Type</span>
-            <span class="language">Language</span>
+            <span class="node">Node /<span class="relase">Relase</span></span>
         </div>
 
-
-
-    <script type="text/javascript">
-
-    var show = document.querySelector(".arrow-down");
-
-    show.addEventListener("click", function() {
-
-    var menu = document.querySelector(".menu");
-
-    if(menu.style.display === "block") {
-        menu.style.display = "none";
-        show.style.transform = "rotate(180deg)";
-        show.style.transition = "all 0.3s";
-    } else {
-        menu.style.display = "block";
-        show.style.transform = "rotate(360deg)";
-        show.style.transition = "all 0.3s";
-    }
-
-    });
-        
-    </script>
-
-    <script type="text/javascript"> 
-        var openrep = document.querySelector(".repositories");
-        
-        openrep.addEventListener("click", function() {
-        
-        var repitem = document.querySelector(".rep-items");
-        
-        if(repitem.style.display === "none") {
-            repitem.style.display = "block";
-            openrep.style.borderBottom = "1px solid #ff0000";
-
-        } else {
-            repitem.style.display = "none";
-            openrep.style.borderBottom= "none";
-        }
-        
-        });
-            
-    </script>
 
     </body>
 </html>

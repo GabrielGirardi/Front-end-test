@@ -183,21 +183,14 @@
         }
 
         .type {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 8px;
-            width: 88px;
-            height: 32px;
-            background: linear-gradient(89.89deg, #0056A6 -30.01%, #0587FF 125.65%);
-            border-radius: 42px;
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
             line-height: 16px;
             color: #FFFFFF;
         }
-        .language {
+        
+        .type-content {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -206,6 +199,25 @@
             height: 32px;
             background: linear-gradient(89.89deg, #0056A6 -30.01%, #0587FF 125.65%);
             border-radius: 42px;
+
+           & img {
+                position: absolute;
+                left: 4%;
+            }
+        }
+
+        .language-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 104px;
+            height: 32px;
+             margin-right: 8px;
+             background: linear-gradient(89.89deg, #0056A6 -30.01%, #0587FF 125.65%);
+             border-radius: 42px; 
+        }
+        
+        .language {
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 400;
@@ -234,7 +246,6 @@
     }
 
     .node {
-        font-weight: 700;
         font-size: 18px;
         font-family: 'Roboto';
     }

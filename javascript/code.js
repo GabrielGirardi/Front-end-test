@@ -10,13 +10,13 @@ window.onload = function() {
 
     var menu = document.querySelector(".menu");
 
-    if(menu.style.display === "none") {
+    if (menu.style.display === "none") {
         menu.style.display = "block";
     } else {
         menu.style.display = "none";
     }
 
-    if(menu.style.display === "block") {
+    if (menu.style.display === "block") {
         arrow.style.transform = "rotate(180deg)";
         arrow.style.transition = "all 0.3s";
     } else {

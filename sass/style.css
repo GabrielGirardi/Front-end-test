@@ -205,27 +205,13 @@
     margin-left: 8px;
   }
   .group-container .type {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-right: 8px;
-    width: 88px;
-    height: 32px;
-    background: linear-gradient(89.89deg, #0056A6 -30.01%, #0587FF 125.65%);
-    border-radius: 42px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
   }
-  .group-container .language {
+  .group-container .type-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -240,6 +226,28 @@
     height: 32px;
     background: linear-gradient(89.89deg, #0056A6 -30.01%, #0587FF 125.65%);
     border-radius: 42px;
+  }
+  .group-container .type-content img {
+    position: absolute;
+    left: 4%;
+  }
+  .group-container .language-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 104px;
+    height: 32px;
+    margin-right: 8px;
+    background: linear-gradient(89.89deg, #0056A6 -30.01%, #0587FF 125.65%);
+    border-radius: 42px;
+  }
+  .group-container .language {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -272,7 +280,6 @@
 }
 
 .node {
-  font-weight: 700;
   font-size: 18px;
   font-family: 'Roboto';
 }

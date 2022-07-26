@@ -13,7 +13,7 @@
     display: flex;
     position: relative;
   }
-  #profile {
+  .cotainer-profile #profile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -25,7 +25,7 @@
     -webkit-box-shadow: 0px 0px 20px 15px #ebe9e9;
             box-shadow: 0px 0px 20px 15px #ebe9e9;
   }
-  .container-emoji {
+  .cotainer-profile .container-emoji {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -37,7 +37,7 @@
     bottom: 0;
     right: 37%;
   }
-  #emoji {
+  .cotainer-profile .container-emoji #emoji {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -45,13 +45,28 @@
     bottom: 8px;
     right: 30%;
   }
-  .name {
+  .name-and-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .name-and-info .name {
     font-size: 20px;
     font-weight: 700px;
     color: #262626;
     font-family: 'Roboto';
   }
-  .info {
+  .name-and-info .info {
     max-width: 217px;
     margin-top: -5px;
     text-align: center;
@@ -85,14 +100,6 @@
     -webkit-transition: all 0.3;
     transition: all 0.3;
   }
-  .btn-arrow {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0 auto;
-    background: #fff;
-    border: none;
-  }
   .menu {
     display: none;
     background: #f8f8f8;
@@ -100,12 +107,12 @@
     height: 143px;
     border-radius: 20px;
   }
-  .menu-info {
+  .menu .menu-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .menu-list li {
+  .menu .menu-info .menu-list li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -116,15 +123,26 @@
     margin-bottom: 12px;
     color: #0587FF;
   }
-  .menu-list li span {
+  .menu .menu-info .menu-list li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu .menu-info .menu-list li span {
     color: #0587FF;
     margin-left: 10px;
     font-family: 'Roboto';
   }
-  #site {
+  .menu .menu-info .menu-list li #site {
     padding-left: 3px;
   }
-  #img-chain {
+  .menu .menu-info .menu-list li #img-chain {
     margin-left: 3px;
   }
   .categories-menu {
@@ -134,7 +152,7 @@
     margin-top: 20px;
     padding: 0 10px;
   }
-  .repositories {
+  .categories-menu .repositories {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -148,14 +166,18 @@
     border-right: none;
     border-left: none;
   }
-  .rep {
+  .categories-menu .repositories .book {
+    width: 24px;
+    height: 24px;
+  }
+  .categories-menu .repositories .rep {
     margin-left: 10px;
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
   }
-  .counter-background {
+  .categories-menu .repositories .counter-background {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -172,7 +194,7 @@
     border: 1px solid #c2c2c2;
     border-radius: 36px;
   }
-  #counter {
+  .categories-menu .repositories .counter-background #counter {
     color: #c2c2c2;
     font-family: 'Roboto';
     font-size: 12px;
@@ -180,6 +202,15 @@
   .rep-items {
     padding: 0 24px;
     margin-top: 12px;
+  }
+  .rep-items .node {
+    font-size: 18px;
+    font-family: 'Roboto';
+  }
+  .rep-items .node .relase {
+    color: blue;
+    font-weight: 700;
+    font-family: 'Roboto';
   }
   .group-container {
     display: -webkit-box;
@@ -204,14 +235,7 @@
             align-items: center;
     margin-left: 8px;
   }
-  .group-container .type {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
-  }
-  .group-container .type-content {
+  .group-container .group-options .type-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -227,11 +251,18 @@
     background: linear-gradient(89.89deg, #0056A6 -30.01%, #0587FF 125.65%);
     border-radius: 42px;
   }
-  .group-container .type-content img {
+  .group-container .group-options .type-content img {
     position: absolute;
     left: 4%;
   }
-  .group-container .language-content {
+  .group-container .group-options .type-content .type {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+  }
+  .group-container .group-options .language-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -247,7 +278,7 @@
     background: linear-gradient(89.89deg, #0056A6 -30.01%, #0587FF 125.65%);
     border-radius: 42px;
   }
-  .group-container .language {
+  .group-container .group-options .language-content .language {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -257,51 +288,7 @@
   }
   .group-container .lupa {
     position: absolute;
-    right: 3%;
+    right: 10%;
   }
-}
-
-.menu-list li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.relase {
-  color: blue;
-  font-weight: 700;
-  font-family: 'Roboto';
-}
-
-.node {
-  font-size: 18px;
-  font-family: 'Roboto';
-}
-
-.book {
-  width: 24px;
-  height: 24px;
-}
-
-.name-and-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */
